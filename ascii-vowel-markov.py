@@ -1,6 +1,6 @@
 # Code to encode ASCII strings as English words
 # By Hannah Newman <HN860433@wcupa.edu>
-2
+
 import random
 
 # input: a text string
@@ -31,7 +31,7 @@ def is_zero(letter):
     return letter in "aeiouy"
 
 # get lines from a file
-word_file = open("shakespeare.txt")
+word_file = open("corpus.txt")
 lines = word_file.readlines()
 word_file.close()
 
@@ -128,5 +128,5 @@ def binary_decode(string):
         plaintext += chr(int(string[i:i+8], 2))
     return plaintext
 
-
-print binary_encode("test test 123")
+# prints encoded version of user-input string
+print binary_encode(raw_input("What text would you like to encode?\n>"))

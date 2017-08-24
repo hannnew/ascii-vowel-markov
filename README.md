@@ -1,0 +1,3 @@
+This code encodes strings as words which follow each other (for the most part) in a corpus where the digits of the UTF-8 or ASCII binary representation of the characters of the string match letter patterns in the words. (In the current version of the code, vowels and Y match with 0, and consonants match with 1; however, this can be easily changed.)
+Currently, the quality of the Markov chain will vary with the corpus used: occasionally, the algorithm will run into a dead end and restart with a random word.
+The corpus used in this project was downloaded from https://www.gutenberg.org/ebooks/730, and is not mine.
